@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bate-Papo da UOL</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="assets/uol_icon-icons.com_61638.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <img src="assets/logo 1.png" alt="Logo do bate papo da UOU">
+        <ion-icon name="people" size="large"></ion-icon>
+    </header>
+
+    <main>
+        <div class="mensagem" data-identifier="message">
+            <p class="timestamp">(tempo aqui)</p>
+            <span><b>Maria</b> para <b>Todos</b>:</span>
+            <p class="text-mensage"> bom dia</p>
+        </div>
+
+        <div class="mensagem" data-identifier="message">
+            <p class="timestamp">(tempo aqui)</p>
+            <span><b>Maria</b> para <b>Todos</b>:</span>
+            <p class="text-mensage"> bom dia</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <input type="textarea" name="message" data-identifier="message" id="message-area" placeholder="Escreva aqui...">
+        <ion-icon name="paper-plane-outline" size="large" data-identifier="send-message"></ion-icon>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="scripts.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
