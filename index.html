@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilo.css">
     <link rel="shortcut icon" href="assets/uol_icon-icons.com_61638.ico" type="image/x-icon">
 </head>
@@ -23,23 +23,12 @@
     </header>
 
     <main>
-        <div class="mensagem" data-identifier="message">
-            <p class="timestamp">(tempo aqui)</p>
-            <span><b>Maria</b> para <b>Todos</b>:</span>
-            <p class="text-mensage"> bom dia</p>
-        </div>
-
-        <div class="mensagem" data-identifier="message">
-            <p class="timestamp">(tempo aqui)</p>
-            <span><b>Maria</b> para <b>Todos</b>:</span>
-            <p class="text-mensage"> bom dia</p>
-        </div>
-
+        <ul></ul>
     </main>
 
     <footer>
-        <input type="textarea" name="message" data-identifier="message" id="message-area" placeholder="Escreva aqui...">
-        <ion-icon name="paper-plane-outline" size="large" data-identifier="send-message"></ion-icon>
+        <input type="textarea" name="message" data-identifier="message" id="messageArea" placeholder="Escreva aqui...">
+        <ion-icon name="paper-plane-outline" size="large" onclick="sendMessage()" data-identifier="send-message"></ion-icon>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
